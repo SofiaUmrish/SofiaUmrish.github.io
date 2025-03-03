@@ -1,0 +1,35 @@
+/*
+768 - 991
+460 - 576
+*/
+/* Адаптивність для планшетів */
+@media (max-width: 991px) {
+
+    main {
+        padding: 40px;
+    }
+
+    main h2{
+        margin-top: 0;
+    }
+}
+
+/* Адаптивність для телефонів */
+@media (max-width: 576px) {
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .ship-info img {
+        max-width: 100%;
+    }
+
+    .ship-status {
+        width: 100%;
+    }
+
+    
+}

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('шрифти/Montserrat-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2{
+    margin: 35px;;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a23;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центруємо текст */
+    background-color: #1c1c3d;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 200px; /* Або змінюй під свої потреби */
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.expedition ul {
+    list-style: none; /* Видаляє маркери списку */
+    padding: 0; /* Прибирає відступи */
+    margin: 0; /* Прибирає зовнішні відступи */
+}
+.expedition ul li{
+    margin-bottom: 13px; /* Прибирає зовнішні відступи */
+}
+
+nav ul li a:hover {
+    background-color: #28285e;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.ship-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #141438;
+    border-radius: 10px;
+}
+
+.ship-info img {
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+
+.ship-status {
+    background-color: #1c1c3d;
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: left;
+}
+
+.ship-status p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.status-bar {
+    height: 10px;
+    background-color: #28285e;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.status-fill {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+.expedition-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.expedition-btn {
+    display: block;
+    background-color: #4a47a3;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    
+    margin-bottom: 23px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+}
+
+.expedition-btn:hover {
+    background-color: #3734a9;
+}
+
+
+footer {
+    background-color: #1c1c3d;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.copyrights{
+    margin-top: 20px;
+   font-size: 13px;
+}
+
