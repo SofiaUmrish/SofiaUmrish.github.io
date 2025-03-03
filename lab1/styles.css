@@ -25,13 +25,13 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Центруємо текст */
+    justify-content: center; /* центрує текст */
     background-color: #1c1c3d;
     padding: 10px 20px;
 }
 
 .logo {
-    height: 200px; /* Або змінюй під свої потреби */
+    height: 200px; 
     
 }
 
@@ -54,12 +54,12 @@ nav ul li a {
 }
 
 .expedition ul {
-    list-style: none; /* Видаляє маркери списку */
-    padding: 0; /* Прибирає відступи */
-    margin: 0; /* Прибирає зовнішні відступи */
+    list-style: none; /* видаляє маркери списку */
+    padding: 0; 
+    margin: 0;
 }
 .expedition ul li{
-    margin-bottom: 13px; /* Прибирає зовнішні відступи */
+    margin-bottom: 13px; 
 }
 
 nav ul li a:hover {
