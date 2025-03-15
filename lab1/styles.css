@@ -1,8 +1,9 @@
-* {
+* { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('шрифти/Montserrat-VariableFont_wght.ttf');
@@ -10,8 +11,8 @@
     font-style: normal;
 }
 
-h2{
-    margin: 35px;;
+h2 {
+    margin: 35px;
 }
 
 body {
@@ -25,14 +26,13 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Центруємо текст */
+    justify-content: center; /* центрує текст */
     background-color: #1c1c3d;
     padding: 10px 20px;
 }
 
 .logo {
-    height: 200px; /* Або змінюй під свої потреби */
-    
+    height: 200px;
 }
 
 nav ul {
@@ -51,27 +51,19 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
-}
-
-.expedition ul {
-    list-style: none; /* Видаляє маркери списку */
-    padding: 0; /* Прибирає відступи */
-    margin: 0; /* Прибирає зовнішні відступи */
-}
-.expedition ul li{
-    margin-bottom: 13px; /* Прибирає зовнішні відступи */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
     background-color: #28285e;
-    border-radius: 5px;
+    transform: scale(1.05);
 }
 
 main {
     padding: 20px;
     text-align: center;
 }
-
 .ship-info {
     display: flex;
     flex-wrap: wrap;
@@ -88,13 +80,13 @@ main {
     border-radius: 10px;
 }
 
-
 .ship-status {
-    background-color: #1c1c3d;
+    background-color: #4a47a3;
     padding: 10px;
     border-radius: 8px;
     width: 250px;
     text-align: left;
+    box-shadow: 0 4px 10px rgba(107, 120, 225, 0.3);
 }
 
 .ship-status p {
@@ -103,47 +95,52 @@ main {
 }
 
 .status-bar {
-    height: 10px;
+    height: 15px;
     background-color: #28285e;
     border-radius: 10px;
     margin-bottom: 10px;
+    overflow: hidden; /* щоб заокруглені кути працювали */
 }
 
 .status-fill {
     height: 100%;
-    background-color: #4caf50;
+    background-color: #4a9e47;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* додаємо заокруглення */
 }
-
 
 section {
     margin-bottom: 20px;
 }
+
+/* Стилізація кнопок */
 .expedition-buttons {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Розташування кнопок в стовпчик */
+    align-items: center; /* Центруємо кнопки по горизонталі */
     margin-top: 15px;
-    justify-content: center;
+    
 }
 
 .expedition-btn {
-    display: block;
     background-color: #4a47a3;
     color: white;
     font-size: 18px;
-    padding: 10px 20px;
-    
-    margin-bottom: 23px;
+    padding: 12px 20px;
+    margin-bottom: 15px; /* Відступ між кнопками */
     border: none;
     border-radius: 8px;
     cursor: pointer;
     width: 250px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(107, 120, 225, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .expedition-btn:hover {
     background-color: #3734a9;
+    transform: scale(1.05);
 }
-
 
 footer {
     background-color: #1c1c3d;
@@ -153,8 +150,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.copyrights{
-    margin-top: 20px;
-   font-size: 13px;
-}
 
+.copyrights {
+    margin-top: 20px;
+    font-size: 13px;
+}
