@@ -17,28 +17,29 @@ document.addEventListener("DOMContentLoaded", () => {
                                    Місія також включатиме пошук атмосферних ознак, таких як метан або кисень, 
                                    що можуть вказувати на наявність біологічних процесів.`
     };
-    
 
+    // додача опису на кнопки вибору експедицій
+    const buttons = document.querySelectorAll(".expedition-btn");
     
-
-    document.querySelectorAll(".expedition-btn").forEach(button => {
-        button.addEventListener("click", () => {
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", () => {
             const missionSection = document.getElementById("missions");
             let missionDescription = missionSection.querySelector(".mission-description");
-
+    
             if (!missionDescription) {
                 missionDescription = document.createElement("p");
                 missionDescription.classList.add("mission-description");
                 missionSection.appendChild(missionDescription);
             }
-
+    
+            // плавна зміна тексту
             missionDescription.style.opacity = "0";
             setTimeout(() => {
-                missionDescription.textContent = expeditions[button.textContent];
+                missionDescription.textContent = expeditions[buttons[i].textContent];
                 missionDescription.style.opacity = "1";
             }, 300);
         });
-    });
+    }
 
     const missions = ["Дослідження Марса", "Місія на Титан", "Пошук позаземного життя"];
     const missionData = [{ fuel: 80, energy: 65 }, { fuel: 60, energy: 55 }, { fuel: 90, energy: 70 }];
